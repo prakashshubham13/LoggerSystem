@@ -1,0 +1,73 @@
+.floating-gpt-bot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chat-icon {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background-color: #007bff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chat-icon img {
+  width: 70%;
+  height: 70%;
+}
+
+.chat-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 0 15px #007bff;
+}
+
+.chat-window {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 300px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.chat-window h2 {
+  margin-top: 0;
+}
+
+.chat-window input {
+  width: calc(100% - 20px);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.chat-window button {
+  width: 100%;
+  padding: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-window button:hover {
+  background-color: #0056b3;
+}
+
+.chat-window pre {
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+}
